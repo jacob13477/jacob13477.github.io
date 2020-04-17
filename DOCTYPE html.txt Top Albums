@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #6699ff;
+  font-family: courier;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1000px;
+  background: #00ccff;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: verdana;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 1000px;
+  background-color: #0000ff;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #6699ff;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a:link {
+color: white;
+}
+
+a:hover {
+color: red;
+}
+
+a:visited {
+color: green;
+}
+
+img {
+max-height: 100%;
+ max-width: 100%;
+}
+
+p {
+   color: white;
+}
+
+ol {
+    color: white;
+    text-align: left;
+}
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>Tenth Avenue North</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">About the Band</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+      
+      <li><a img src="https://photos.bandsintown.com/thumb/9125640.jpeg"/></li>
+    </ul>
+  </nav>
+ 
+  <article>
+  <h1 style="font-size:50px;color:red;border:5px solid black;">Top Albums</h1>
+  
+  <table align="center">
+  <tr>
+  <td><img src="https://i1.wp.com/mytopfinding.com/wp-content/uploads/2019/08/33089-space-to-speak-lyrics-tenth-avenue-north-maxresdefault.jpg?resize=150%2C150&ssl=1"/></td>
+  <td>
+      <ol>
+      <li>No Shame</li>
+      <li>Heaven is Now</li>
+      <li>Someone to Talk to</li>
+      <li>A Phone Call</li>
+      <li>Greater than All my Regrets</li>
+      <li>The Future</li>
+      <li>Paranoia</li>
+      <li>Reaching</li>
+      <li>Call My Name</li>
+      <li>Space To Speak</li>
+      <li>Always Been You</li>
+      </ol>
+  </td>
+  </tr>
+  
+  <tr>
+  <td><img src="https://images-na.ssl-images-amazon.com/images/I/61XgKiTiE5L._SY355_.jpg" height="150" width="150"></td>
+  <td>
+      <ol>
+      <li>Afraid</li>
+      <li>What You Want</li>
+      <li>Overflow</li>
+      <li>I Have This Hope</li>
+      <li>One Thing</li>
+      <li>Sparrow</li>
+      <li>No One Can Steal Our Joy</li>
+      <li>Control</li>
+      <li>Fighting For You</li>
+      <li>I Confess</li>
+      </li>
+      </ol>
+  </td>
+  </tr>
+  
+  <tr>
+  <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/98/Over_and_Underneath.jpg/220px-Over_and_Underneath.jpg" height="150" width="150"></td>
+  <td>
+  
+      <ol>
+      <li>Love Is Here</li>
+      <li>Lift Us Up To Fall</li>
+      <li>By Your Side</li>
+      <li>Let It Go</li>
+      <li>Break Me Down</li>
+      <li>Hold My Heart</li>
+      <li>Times</li>
+      <li>Beloved</li>
+      <li>You Are</li>
+      <li>Satisfy</li>
+      <li>Hallelujah</li>
+      </ol>
+  </table>
+  </article>
+ 
+</section>
+
+<footer>
+  <i>Copyright &copy; 2020 Jacob Jones. All Rights Reserved.</i>
+</footer>
+
+</body>
+</html>
